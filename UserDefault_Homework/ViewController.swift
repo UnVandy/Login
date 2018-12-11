@@ -15,6 +15,8 @@ class ViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var passwordLoginTextField: UITextField!
     
     @IBOutlet weak var logInButton: UIButton!
+    
+    var loginComplete = false
   
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -58,10 +60,17 @@ class ViewController: UIViewController, UITextFieldDelegate {
             alert.addButton(withTitle: "OK")
             alert.show()
         }else {
-            alert.title = "Login Success"
-            alert.message = "Login success, but i can not open signOut view controller for you, sorry !"
-            alert.addButton(withTitle: "OK")
-            alert.show()
+  
+            //let newViewController = SignOutViewController()
+            //self.navigationController?.pushViewController(newViewController, animated: true)
+           performSegue(withIdentifier: "newSignUp", sender: nil)
+        print("complete signup!")
+            
+//            alert.title = "Login Success"
+//            alert.message = "Login success, but i can not open signOut view controller for you, sorry !"
+//            alert.addButton(withTitle: "OK")
+//            alert.show()
+            
         }
         self.view.endEditing(true)
     }
@@ -80,6 +89,12 @@ class ViewController: UIViewController, UITextFieldDelegate {
         }
         return false
     }
+//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+//        if(segue.identifier == "loginComplete"){
+//
+//        }
+//
+//    }
    
 }
 

@@ -42,7 +42,6 @@
 		31C6A8C421BAD7FA00D78F9C = {
 			isa = PBXGroup;
 			children = (
-				317B6D4A21BBF6B000772590 /* SignOutViewController.swift */,
 				31C6A8CF21BAD7FA00D78F9C /* UserDefault_Homework */,
 				31C6A8CE21BAD7FA00D78F9C /* Products */,
 			);
@@ -59,6 +58,7 @@
 		31C6A8CF21BAD7FA00D78F9C /* UserDefault_Homework */ = {
 			isa = PBXGroup;
 			children = (
+				317B6D4A21BBF6B000772590 /* SignOutViewController.swift */,
 				31C6A8D021BAD7FA00D78F9C /* AppDelegate.swift */,
 				31C6A8D221BAD7FA00D78F9C /* ViewController.swift */,
 				317CD73B21BB538C0000B14F /* SignUpViewController.swift */,
